@@ -14,8 +14,6 @@ public class DeathEventListener implements Listener {
         //Registers death if player is dueling.
         if (DuelManager.getInstance().isDueling(player)) {
             e.getDrops().clear();
-            e.setDeathMessage("");
-            DuelManager.getInstance().registerDuelistDeath(player, false);
         }
     }
 
